@@ -14,12 +14,16 @@
             <th>id</th>
             <th>title</th>
             <th>content</th>
+            <th>created at</th>
+            <th>updated at</th>
         </tr>
         @foreach($articles as $article)
             <tr>
                 <td>{{$article->id}}</td>
                 <td>{{$article->title}}</td>
                 <td>{{$article->content}}</td>
+                <td>{{$article->created_at}}</td>
+                <td>{{$article->updated_at}}</td>
             </tr>
         @endforeach
     </table>
